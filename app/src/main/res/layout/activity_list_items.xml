@@ -4,7 +4,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.adam.androidlabs.ListItemsActivity">
+    android:layout_height="wrap_content"
+    tools:context="com.example.adam.androidlabs.ListItemsActivity"
+    android:rowCount="2"
+    android:columnCount="2"
+    >
+    <RadioButton
+        android:text="RadioButton"
+        android:column_Weight="1"
+        android:gravity="fill"
+        />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:column_Weight="1"
+        android:gravity="fill"
+        />
+
+
+    <Switch
+        android:text="What Does This Do?"
+        android:column_Weight="1"
+        android:gravity="fill"
+        />
+
+    <ImageButton
+        android:src="@android:drawable/ic_menu_camera"
+        android:column_Weight="1"
+        android:gravity="fill"
+        />
 
 </GridLayout>

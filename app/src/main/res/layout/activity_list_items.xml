@@ -11,26 +11,26 @@
     >
     <RadioButton
         android:text="RadioButton"
-        android:column_Weight="1"
+        android:layout_columnWeight="1"
         android:gravity="fill"
         />
 
     <CheckBox
         android:text="CheckBox"
-        android:column_Weight="1"
+        android:layout_columnWeight="1"
         android:gravity="fill"
         />
 
 
     <Switch
         android:text="What Does This Do?"
-        android:column_Weight="1"
+        android:layout_columnWeight="1"
         android:gravity="fill"
         />
 
     <ImageButton
         android:src="@android:drawable/ic_menu_camera"
-        android:column_Weight="1"
+        android:layout_columnWeight="1"
         android:gravity="fill"
         />
 

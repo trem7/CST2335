@@ -10,20 +10,20 @@
     android:columnCount="2"
     >
     <RadioButton
-        android:text="RadioButton"
+        android:text="@string/RadioButton"
         android:layout_columnWeight="1"
         android:gravity="fill"
         />
 
     <CheckBox
-        android:text="CheckBox"
+        android:text="@string/CheckBox"
         android:layout_columnWeight="1"
         android:gravity="fill"
         />
 
 
     <Switch
-        android:text="What Does This Do?"
+        android:text="@string/Switch"
         android:layout_columnWeight="1"
         android:gravity="fill"
         />

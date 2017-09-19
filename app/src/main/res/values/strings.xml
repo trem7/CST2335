@@ -4,4 +4,7 @@
     <string name="ButtonText">I\'m a button</string>
     <string name="loginText">login</string>
     <string name="passwordText">password</string>
+    <string name="RadioButton">RadioButton</string>
+    <string name="CheckBox">CheckBox</string>
+    <string name="Switch">What Does This Do?</string>
 </resources>

@@ -8,4 +8,9 @@
     <string name="RadioButton">RadioButton</string>
     <string name="CheckBox">CheckBox</string>
     <string name="Switch">What Does This Do?</string>
+    <string name="dialog_message">Would you like to finish the activity?</string>
+    <string name="dialog_title">FINISH ACTIVITY</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ToastMessage">ListItemsActivity passed: My information to share</string>
 </resources>

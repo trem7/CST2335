@@ -15,15 +15,11 @@ public class LoginActivity extends Activity {
     Button loginBtn;
     public static final String PREFS = "MyPrefsFile";
     EditText txtEmail;
-    public static final String KEY_EMAIL = "email@domain.com";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-
 
         // Email field
         txtEmail = findViewById(R.id.email);
@@ -31,11 +27,8 @@ public class LoginActivity extends Activity {
         // Login Button
         loginBtn = findViewById(R.id.loginBtn);
 
-
         final SharedPreferences sharedPreferences = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
-
-
-
+        txtEmail.setText(sharedPreferences.getString("Email", "email@domain.com"));
         // Login Button Click event
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,20 +36,18 @@ public class LoginActivity extends Activity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 sharedPreferences.getString("DefaultEmail", "email@domain.com");
 
+                // Get Email from EditText
                 String emailAddress = txtEmail.getText().toString();
+
+                // Put entered text into email
                 editor.putString("Email", emailAddress);
                 editor.commit();
 
-
-                // Get Email from EditText
-
-
+                Intent intent = new Intent(LoginActivity.this, StartActivity.class);
+                startActivity(intent);
 
             }
         });
-
-        Intent intent = new Intent(LoginActivity.this, StartActivity.class);
-        startActivity(intent);
     }
 
     @Override

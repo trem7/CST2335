@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class LoginActivity extends Activity {
-    protected static  final String ACTIVITY_NAME = "LoginActivity";
+    protected static final String ACTIVITY_NAME = "LoginActivity";
     Button loginBtn;
     public static final String PREFS = "MyPrefsFile";
     EditText txtEmail;
@@ -29,6 +29,7 @@ public class LoginActivity extends Activity {
 
         final SharedPreferences sharedPreferences = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
         txtEmail.setText(sharedPreferences.getString("Email", "email@domain.com"));
+
         // Login Button Click event
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override

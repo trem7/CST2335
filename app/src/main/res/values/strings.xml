@@ -13,4 +13,6 @@
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
     <string name="ToastMessage">ListItemsActivity passed: My information to share</string>
+    <string name="StartChat">Start Chat</string>
+    <string name="chatButton">SEND</string>
 </resources>

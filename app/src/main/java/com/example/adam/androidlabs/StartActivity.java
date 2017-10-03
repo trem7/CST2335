@@ -21,6 +21,18 @@ public class StartActivity extends Activity {
         // Create reference to Button
         Button button = findViewById(R.id.button);
 
+        // Create reference to Chat Button
+        Button chatButton = findViewById(R.id.chatButton);
+
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

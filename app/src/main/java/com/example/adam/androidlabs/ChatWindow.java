@@ -2,6 +2,7 @@ package com.example.adam.androidlabs;
 
 import android.app.Activity;
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -26,6 +27,10 @@ public class ChatWindow extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_window);
+
+        ChatDatabaseHelper chatDatabaseHelper = new ChatDatabaseHelper(this);
+        final SQLiteDatabase db = chatDatabaseHelper.getWritableDatabase();
+        
 
         listView = findViewById(R.id.chatListView);
         chatText = findViewById(R.id.chatText);

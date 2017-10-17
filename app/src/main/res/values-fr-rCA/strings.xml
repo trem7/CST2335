@@ -13,4 +13,6 @@
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
     <string name="ToastMessage">ListItemsActivity passé: Mes informations à partager</string>
+    <string name="StartChat">Commencer L\'appel</string>
+    <string name="chatButton">ENVOI</string>
 </resources>

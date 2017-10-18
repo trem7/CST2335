@@ -47,10 +47,6 @@ public class ChatWindow extends Activity {
                 chatText.setText("");
             }
         });
-
-
-
-
     }
     public class ChatAdapter extends ArrayAdapter<String>{
         public ChatAdapter(Context ctx){

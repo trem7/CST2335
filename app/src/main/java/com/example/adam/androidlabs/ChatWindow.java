@@ -30,7 +30,6 @@ public class ChatWindow extends Activity {
 
         ChatDatabaseHelper chatDatabaseHelper = new ChatDatabaseHelper(this);
         final SQLiteDatabase db = chatDatabaseHelper.getWritableDatabase();
-        
 
         listView = findViewById(R.id.chatListView);
         chatText = findViewById(R.id.chatText);

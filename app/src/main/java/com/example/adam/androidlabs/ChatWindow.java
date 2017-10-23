@@ -55,7 +55,7 @@ public class ChatWindow extends Activity {
         //This is an example of a SimpleCursorAdapter to fill a list view with database results:
         int [] arr = new int[]{R.id.chatText};
         listView = findViewById(R.id.chatListView);
-        SimpleCursorAdapter adptr = new SimpleCursorAdapter(this, R.layout.activity_chat_window, results,
+        SimpleCursorAdapter adptr = new SimpleCursorAdapter(this, R.layout.cursor_layout, results,
                 new String[] {KEY_ID, KEY_MESSAGE}, arr, 0);
 
         String returnedMessage;
